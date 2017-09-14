@@ -1,0 +1,219 @@
+html{
+	height: 100%;
+}
+
+.content{
+	flex: 1 0 auto;
+	padding: 0px;
+}
+
+#viewHead{
+	position: relative;
+	/*border: 1px solid;*/
+	width: 960px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+#viewBody{
+	position: relative;
+	/*border: 1px solid;*/
+	width: 960px;
+	/*height: 100px;*/
+	margin: 0 auto;
+}
+
+header{
+	position: relative;
+	top: 0;
+	background-color: #FFF;
+	height: 100px;
+	border-bottom: 3px solid #ccc;
+	color: #4aaaa5;
+
+}
+
+h1, h2{
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #4aaaa5;
+	font-weight: bold;
+}
+
+a{
+	color: #4aaaa5;
+}
+
+h1{
+	font-size: 200%;
+}
+
+h2{
+	font-size: 150%;
+}
+
+h3{
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #fff;
+	/*font-weight: bold;*/
+}
+
+hr{
+	/*width: 3px;*/
+	/*color: #cccccc;*/
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 2px;
+	border-style: none;
+	background-color: #ccc;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	background-image: url("../images/background.png");
+	font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+	color: #777;
+}
+
+#mainBox{
+	float: left;
+	background: #fff;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding: 30px;
+	width: 590px;
+	line-height: 150%;
+	border: 2px solid #dddddd;
+	/*clear:both;*/
+	overflow: hidden;
+}
+
+#connectBox{
+	margin-top: 40px;
+	padding: 20px;
+	float: right;
+	background: #fff;
+	width: 230px;
+	border: 2px solid #dddddd;
+}
+
+.connectIcon{
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+}
+
+#myPhoto{
+		height: 180px;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		/*width: 200px;*/
+		float: left;
+}
+
+#myName{
+	z-index: 2;
+	flow: left;
+	font-size: 200%;
+	font-weight: bold;
+	color: white;
+	float: left;
+	background-color: #4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	padding: 20px;
+	position: absolute;
+	bottom: 0;
+	left: 0px;
+}
+
+#navLinks{
+	/*font-size: 150%*/;
+	padding-top: 55px;
+	flow: right;
+	text-align: right;
+	/*position: absolute;
+	right:0;*/
+	/*background-color: red;*/
+	margin: 0 auto;
+	/*padding: 20px;*/
+}
+
+footer{
+	flex-shrink: 0;
+	clear: both;
+	background-color: #666666;
+	color: #FFF;
+	text-align: center;
+	padding: 40px;
+	border-top: 7px solid #4aaaa5;
+	/*border-top-style: solid;
+	border-top-width: 5px;
+	border-top-color: #ccc;*/
+}
+
+
+input[type=text]{
+	border: 2px solid #dddddd;
+	padding: 5px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	width: 580px;
+	padding-top: 5px;
+}
+
+input[type=submit]{
+	border: none;
+	background-color: #4aaaa5;
+	width: 90px;
+	color: #fff;
+	padding: 7px;
+}
+
+textarea{
+	border: 2px solid #dddddd;
+	width: 580px;
+	padding: 5px;
+	height: 200px;
+}
+
+.portBoxLeft{
+	padding-bottom: 30px;
+	float: left;
+	width: 260px;
+	height: 200px;
+}
+
+.portBoxRight{
+	padding-bottom: 30px;
+	float: right;
+	width: 260px;
+	height: 200px;
+}
+
+.portLabel{
+	text-align: center;
+	position: relative;
+	bottom: 70px;
+	padding: 10px;
+	background-color: #4aaaa5;
+	margin: 0 auto;
+}
+
+.portImage{
+	width: 260px;
+	height: 200px;
+}
+
+.connectIcon:hover{
+	opacity: .5;
+}
+
+a:hover {
+	color: #ccc;
+}
+
+input[type=submit]:hover{
+	background-color: #ccc;
+}
+
