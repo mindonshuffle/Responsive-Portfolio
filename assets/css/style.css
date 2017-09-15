@@ -217,3 +217,25 @@ input[type=submit]:hover{
 	background-color: #ccc;
 }
 
+
+/*-------------START MEDIA QUERIES--------------------------------------------------*/
+
+
+@media screen and (max-width: 980px) {
+	body{
+		background-image: url("");
+		background-color: yellow;
+	}
+
+@media screen and (max-width: 768px) {
+	body{
+		background-image: url("");
+		background-color: red;
+	}
+
+
+@media screen and (max-width: 640px) {
+	body{
+		background-image: url("");
+		background-color: blue;
+	}
