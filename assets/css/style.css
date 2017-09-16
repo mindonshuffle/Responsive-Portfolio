@@ -25,9 +25,9 @@ html{
 
 header{
 	position: relative;
-	top: 0;
+	/*	top: 0;*/
 	background-color: #FFF;
-	height: 100px;
+	height: 70px;
 	border-bottom: 3px solid #ccc;
 	color: #4aaaa5;
 
@@ -54,12 +54,14 @@ h2{
 h3{
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	color: #fff;
+	font-size: 150%;
 	/*font-weight: bold;*/
 }
 
 hr{
 	/*width: 3px;*/
 	/*color: #cccccc;*/
+	width: 100%;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	height: 2px;
@@ -105,11 +107,11 @@ body{
 }
 
 #myPhoto{
-		height: 180px;
-		margin-right: 20px;
-		margin-bottom: 20px;
-		/*width: 200px;*/
-		float: left;
+	height: 180px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	/*width: 200px;*/
+	float: left;
 }
 
 #myName{
@@ -122,14 +124,14 @@ body{
 	background-color: #4aaaa5;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	padding: 20px;
-	position: absolute;
+	/*position: absolute;*/
 	bottom: 0;
 	left: 0px;
 }
 
 #navLinks{
 	/*font-size: 150%*/;
-	padding-top: 55px;
+	padding-top: 30px;
 	flow: right;
 	text-align: right;
 	/*position: absolute;
@@ -155,14 +157,17 @@ footer{
 
 input[type=text]{
 	border: 2px solid #dddddd;
-	padding: 5px;
+	/*padding: 5px;*/
 	margin-top: 5px;
 	margin-bottom: 10px;
-	width: 580px;
-	padding-top: 5px;
+	/*padding: 5px;*/
+	width: 98%;
+	/*width: 580px;*/
+	padding: 1%;
 }
 
 input[type=submit]{
+	margin-top: 5px;
 	border: none;
 	background-color: #4aaaa5;
 	width: 90px;
@@ -172,24 +177,21 @@ input[type=submit]{
 
 textarea{
 	border: 2px solid #dddddd;
-	width: 580px;
-	padding: 5px;
+	/*width: 580px;
+	padding: 5px;*/
+	width: 98%;
+	padding: 1%;
 	height: 200px;
 }
 
-.portBoxLeft{
-	padding-bottom: 30px;
+.portBoxNew{
+	display: inline;
 	float: left;
-	width: 260px;
-	height: 200px;
+	width: 46%;
+	margin-left: 2%;
+	margin-right: 2%;
 }
 
-.portBoxRight{
-	padding-bottom: 30px;
-	float: right;
-	width: 260px;
-	height: 200px;
-}
 
 .portLabel{
 	text-align: center;
@@ -201,8 +203,8 @@ textarea{
 }
 
 .portImage{
-	width: 260px;
-	height: 200px;
+	width: 100%;
+	height: auto;
 }
 
 .connectIcon:hover{
@@ -222,20 +224,131 @@ input[type=submit]:hover{
 
 
 @media screen and (max-width: 980px) {
-	body{
+/*	body{
 		background-image: url("");
 		background-color: yellow;
+	}*/
+
+	#viewHead{
+		position: relative;
+		width: 740px;
 	}
 
+	#viewBody{
+		width: 740px;
+	}
+
+	#mainBox{
+		width: 400px;
+		padding: 20px;
+	}
+
+	#connectBox{
+		width: 230px;
+		padding: 20px;
+	}
+
+	.portBoxNew{
+		width: 100%;
+		margin: 0px;
+	}
+}
+
+
+
 @media screen and (max-width: 768px) {
-	body{
+/*	body{
 		background-image: url("");
 		background-color: red;
+	}*/
+
+	#viewHead{
+		position: relative;
+		width: 620px;
 	}
+
+	#viewBody{
+		width: 100%;
+	}
+
+	#mainBox{
+
+		float: none;
+		width: 85%;
+		margin: auto;
+		margin-top: 25px;
+		padding: 20px;
+	}
+
+	#connectBox{
+		float: none;
+		width: 85%;
+		margin: auto;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		padding: 20px;
+	}
+
+	.portBoxNew{
+		width: 46%;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+
+}	
+
 
 
 @media screen and (max-width: 640px) {
-	body{
+/*	body{
 		background-image: url("");
 		background-color: blue;
+	}*/
+
+	#viewHead{
+		padding: 0px;
+		position: static;
+		width: 100%;
+		height: 230px;
+		margin: 0px;
 	}
+
+	header{
+		text-align: left;
+		/*position: relative;*/
+		background-color: #FFF;
+		height: 110px;
+	}
+
+	#myName{
+		text-align: center;
+		width: 100%;
+		padding-left: 0px;
+	}
+
+	#navLinks{
+		text-align: center;
+		width: 100%;
+		padding-top: 80px;
+	}
+
+	#mainBox{
+		position: relative;
+	}
+
+	#myPhoto{
+		/*	display: inline;*/
+		float: none;
+		align-self: center;
+		width: 70%;
+		padding-left: 15%;
+		height: auto;
+		margin: auto;
+	}
+
+	.portBoxNew{
+		width: 100%;
+		margin: 0px;
+	}
+}
